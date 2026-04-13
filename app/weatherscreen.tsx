@@ -35,8 +35,6 @@ const WeatherScreen = () => {
         return 'partly-sunny';
     }
   };
-
-  // 🔹 Icon Color
   const iconColor = (condition:any) => {
     switch (condition) {
       case 'Clear':
@@ -53,8 +51,6 @@ const WeatherScreen = () => {
         return '#FFD54F';
     }
   };
-
-  // 🔹 Fetch Weather
   const getWeather = (cityName:any) => {
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_Key}&units=metric`
@@ -101,7 +97,6 @@ const WeatherScreen = () => {
         style={{ flex: 1 }}
         resizeMode="cover"
       >
-        {/* 🔹 Search Section */}
         <View style={styles.container}>
           <Text style={styles.heading}>Search city name</Text>
 
@@ -118,8 +113,6 @@ const WeatherScreen = () => {
               <Ionicons name="search-outline" size={22} color="#000" />
             </TouchableOpacity>
           </View>
-
-          {/* 🔹 Dropdown */}
           {filteredCities.length > 0 && (
             <View style={styles.dropdown}>
               {filteredCities.map((item, index) => (
