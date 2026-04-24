@@ -13,7 +13,7 @@ import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
-const API_Key = '53036a77e02765a04977a0883e474078';
+const API_Key = 'Your-API-Key';
 
 const WeatherScreen = () => {
   const [city, setCity] = useState('');
