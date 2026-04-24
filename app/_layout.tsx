@@ -23,17 +23,3 @@ export default function RootLayout() {
   );
 } 
 
-
-
-
-
-
-
-
-//   },
-//   weathertext:{
-//     fontSize: hp('3'),
-//     fontWeight: '500',
-//     color: '#000'
-//   }
-// })
